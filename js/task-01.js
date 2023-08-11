@@ -13,10 +13,10 @@
 const categoriesEl = document.querySelectorAll("li.item");
 console.log(`Number of categories: ${categoriesEl.length}`);
 
-const itemTitle = document.querySelector("h2").textContent;
+const itemTitle = document.querySelector(".item h2").textContent;
 const itemArrEL = document.querySelectorAll(".item ul");
 
 itemArrEL.forEach((el) => {
-  console.log(`Category: ${itemTitle}`);
+  console.log(`Category: ${el.children.itemTitle}`);
   console.log(`Elements: ${el.children.length}`);
 });
